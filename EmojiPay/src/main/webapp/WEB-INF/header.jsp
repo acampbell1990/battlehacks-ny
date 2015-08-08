@@ -27,10 +27,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    
+    <div class="topNav" id="homeButton"><h1>EmojiPAY :)</h1></div>
+    
   </head>
   <body>
   	<div class="topNav_menu">
-  		<div class="topNav_button"><a href="">Home</a></div>
   		<div class="topNav_button"><a href="">Register</a></div>
   		<div class="topNav_button"><a href="">Edit Profile</a></div>
   		<div class="topNav_button"><a href="">Create Merchant</a></div>
@@ -41,7 +43,9 @@
   
   <script type="text/javascript">
   $(document).ready(funtion(){	  
-	  
+	  $('#homeButton').click(funtion(){
+		  document.location.href=window.location.origin.toString()+"/index.jsp";
+	  });
   });
   </script>
   
