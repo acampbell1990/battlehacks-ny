@@ -11,7 +11,7 @@
 	</context-param>
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
-		<param-value>/WEB-INF/learn2sort-servlet.xml</param-value>
+		<param-value>/WEB-INF/emojipay-servlet.xml</param-value>
 	</context-param>
 	<listener>
 		<listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
@@ -21,19 +21,19 @@
 	</listener>
 
 	<servlet>
-		<servlet-name>learn2sort</servlet-name>
+		<servlet-name>emojipay</servlet-name>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
 
 	<servlet-mapping>
-		<servlet-name>learn2sort</servlet-name>
-		<url-pattern>*.htm</url-pattern>
+		<servlet-name>emojipay</servlet-name>
+		<url-pattern>*</url-pattern>
 	</servlet-mapping>
 
 	<welcome-file-list>
 		<welcome-file>
-      	main.htm
+      	index.htm
     	</welcome-file>
 	</welcome-file-list>
 </web-app>

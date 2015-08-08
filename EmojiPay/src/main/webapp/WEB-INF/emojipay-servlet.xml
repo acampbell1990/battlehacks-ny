@@ -18,9 +18,9 @@
 	</bean>
 	
 	<bean id="sortForm"
-		class="com.campbellonsoftware.l2s.model.SortForm">
-		<property name="listOfNumbers">
-			<value> </value>
+		class="com.battlehack.ny.emojipay.model.SortForm">
+		<property name="paymentAmount">
+			<value></value>
 		</property>
 	</bean>
 </beans>
