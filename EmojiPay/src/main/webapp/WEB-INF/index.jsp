@@ -3,10 +3,13 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <html lang="en">
-<head>
+
 <jsp:include page="header.jsp"/>
-</head>
-<body>
-	Tweet and Eat! It's that simple. :)
+<jsp:include page="navbar.jsp"/>
+
+	<h2>Tweet and Eat! It's that simple. <b>:)</b></h2>
+	<div class="container">
+		<p>Welcome to EmojiPAY, the one and only service that lets you tweet your favorite orders and pay them automatically, ready for you to pick up or have delivered as fast as you can type!</p>
+	</div>
 </body>
 </html>

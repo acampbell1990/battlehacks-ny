@@ -13,8 +13,14 @@
 	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -25,25 +31,11 @@
     
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+
+    
+    <div class="topNav" id="homeButton"><h1>EmojiPAY :)</h1></div>
+    
   </head>
   <body>
-  	<div class="topNav_menu">
-  		<div class="topNav_button"><a href="">Home</a></div>
-  		<div class="topNav_button"><a href="">Register</a></div>
-  		<div class="topNav_button"><a href="">Edit Profile</a></div>
-  		<div class="topNav_button"><a href="">Create Merchant</a></div>
-  		<div class="topNav_button"><a href="">Edit Merchant</a></div>
-  		<div class="topNav_button"><a href="">Log In</a></div>
-  	</div>
-  </body>
+
   
-  <script type="text/javascript">
-  $(document).ready(funtion(){	  
-	  
-  });
-  </script>
-  
-  
-</html>
