@@ -10,7 +10,7 @@
   <script type="text/javascript">
   $(document).ready(funtion(){	  
 	  $('#homeButton').click(funtion(){
-		  document.location.href=window.location.origin.toString()+"/index.jsp";
+		  document.location.href=window.location.origin+"/main";
 	  });
   });
   </script>
