@@ -28,7 +28,7 @@
 
 	<servlet-mapping>
 		<servlet-name>emojipay</servlet-name>
-		<url-pattern>*</url-pattern>
+		<url-pattern>*.htm</url-pattern>
 	</servlet-mapping>
 
 	<welcome-file-list>
