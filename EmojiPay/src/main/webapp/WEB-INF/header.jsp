@@ -22,15 +22,28 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
-  <body>  
-    <h3>Tweet and eat!</h3>
-	
-	
-
+    
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+  </head>
+  <body>
+  	<div class="topNav_menu">
+  		<div class="topNav_button"><a href="">Home</a></div>
+  		<div class="topNav_button"><a href="">Register</a></div>
+  		<div class="topNav_button"><a href="">Edit Profile</a></div>
+  		<div class="topNav_button"><a href="">Create Merchant</a></div>
+  		<div class="topNav_button"><a href="">Edit Merchant</a></div>
+  		<div class="topNav_button"><a href="">Log In</a></div>
+  	</div>
   </body>
+  
+  <script type="text/javascript">
+  $(document).ready(funtion(){	  
+	  
+  });
+  </script>
+  
+  
 </html>

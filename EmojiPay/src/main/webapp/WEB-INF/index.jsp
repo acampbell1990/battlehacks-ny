@@ -4,8 +4,9 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <html lang="en">
 <head>
+<jsp:include page="header.jsp"/>
 </head>
 <body>
-	Hi
+	Tweet and Eat! It's that simple. :)
 </body>
 </html>
