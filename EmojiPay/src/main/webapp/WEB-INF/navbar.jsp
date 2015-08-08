@@ -8,9 +8,9 @@
 
   
   <script type="text/javascript">
-  $(document).ready(funtion(){	  
-	  $('#homeButton').click(funtion(){
-		  document.location.href=window.location.origin+"/main";
+  $(document).ready(function(){	  
+	  $('#homeButton').click(function(){
+		  document.location.href=window.location.origin+"/EmoticonPayments/main";
 	  });
   });
   </script>
