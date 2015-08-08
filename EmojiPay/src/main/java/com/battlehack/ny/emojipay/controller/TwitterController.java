@@ -28,7 +28,7 @@ public class TwitterController {
 		 } catch (Exception e) {
 		    e.printStackTrace();
 		 }
-		 accTok.g
+		 accTok.
 		ResponseList<DirectMessage> status = null;
 		try {
 			status = twitter.getDirectMessages();
