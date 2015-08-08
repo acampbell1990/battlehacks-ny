@@ -1,6 +1,5 @@
 package com.battlehack.ny.emojipay;
 
-import org.junit.Test;
 
 public class PaypalTests {
 	
