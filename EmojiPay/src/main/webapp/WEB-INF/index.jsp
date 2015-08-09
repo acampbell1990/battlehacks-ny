@@ -10,8 +10,6 @@
 
   <body>
 
-    
-
     <div class="container">
 	<h2>Tweet and Eat! It's that simple. <b>;)</b></h2>
 	<div>

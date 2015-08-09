@@ -40,6 +40,6 @@
     
     
     
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/WEB-INF/resources/CustomStyle.css">
+    <!--<link rel="stylesheet" href="${pageContext.request.contextPath}/WEB-INF/resources/CustomStyle.css">-->
   </head>
   

@@ -1,3 +1,4 @@
-<div>This is the footer</div>
+
 </body>
+<div style="bottom:0">contact mgicking@gmail.com</div>
 </html>
