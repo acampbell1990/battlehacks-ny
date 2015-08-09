@@ -6,7 +6,7 @@ public class DAOFactory {
 	private DBConnection instance;
 
 	public void beginConnectionFactory() {
-		instance = DBConnection.getInstance("localhost", "root", "");
+		instance = DBConnection.getInstance();
 	}
 
 	public DBConnection getInstance() {

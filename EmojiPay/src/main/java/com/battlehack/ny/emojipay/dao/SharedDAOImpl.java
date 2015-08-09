@@ -11,8 +11,7 @@ public class SharedDAOImpl {
 	ResultSet rs = null;
 	
 	public int insertLocation(Location location, Connection con){
-			//CREATE TABLE locations (locationID INT(5) NOT NULL AUTO_INCREMENT, address VARCHAR(50), city VARCHAR(30), state VARCHAR(2), zip INT(5),
-		//PRIMARY KEY(locationID));
+			
 		String query = "INSERT INTO locations ( address, city, state, zip ) "
 				+ "VALUES('"+ location.getAddress() +"','"+location.getCity()+"','"+location.getState()+"','"+location.getZip()
 				+"'')";

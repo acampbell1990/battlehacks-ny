@@ -1,8 +1,8 @@
 #!/bin/sh
-cd /Users/rob0229/git/battlehacks-ny/EmojiPay
+cd /Users/Matt/git/battlehacks-ny/EmojiPay
 mvn clean install
-cd /Developer/apache-tomcat-7.0.61/webapps
+cd /Users/Matt/Documents/Servers/apache-tomcat-7.0.57/webapps
 ./../bin/shutdown.sh
 rm -rf Emoticon*
-cp /Users/rob0229/git/battlehacks-ny/EmojiPay/target/EmoticonPayments.war .
+cp /Users/Matt/git/battlehacks-ny/EmojiPay/target/EmoticonPayments.war .
 ./../bin/startup.sh

@@ -15,9 +15,11 @@ public class ClientDAOImpl {
 	
 
 	public int registerUser(Client client, Connection con) {
-		//String query = "INSERT INTO client ( twitter_handle, email) VALUES('"+ client.getTwitterHandle() + "','"+client.getEmail()+"')";
-		String query = "INSERT INTO client ( twitter_handle, email) VALUES('robRules','rob@rkclose.com')";
+		int locationID = new SharedDAOImpl().insertLocation(client.getLocation(), con);
 		
+		String query = "INSERT INTO client ( twitter_handle, email, locationID) VALUES('"+ client.getTwitterHandle() + "','"+client.getEmail()+
+				"','"+locationID+"')";
+		//String query = "INSERT INTO client ( twitter_handle, email, locationID) VALUES('hi','hi@hi.com','1')";
 		String result = "";
 		try {
 			stmt = con.prepareStatement(query);
@@ -27,6 +29,7 @@ public class ClientDAOImpl {
 			System.out.println(e);
 			result = "failure";
 		}
+		
 		return getClientID(client, con);
 	}
 
