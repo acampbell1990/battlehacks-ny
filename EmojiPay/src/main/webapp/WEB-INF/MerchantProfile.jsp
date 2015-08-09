@@ -8,46 +8,28 @@
 <jsp:include page="navbar.jsp"/>
 </head>
 <body>
-	<form action="/submitMerchantForm.html" method="post" id="editMerchant">
+	<form>
+		<div class="form-group">
 		<label for="twitterHandle">Twitter Handle:</label>
-		<input type="text" name="merchant.twitterHandle" value="${merchant.twitterHandle}"/>
-
-		<fieldset class="scheduler-border">
-		<legend class="scheduler-border">Merchant Information:</legend>
+		<input type="text" name="merchant.twitterHandle" value="${merchant.twitterHandle}" disabled readonly="readonly"/>
+		</div>
+		<div class="form-group">
 			<label for="merchant_businessName">Business Name:</label>
-			<input type="text" name="merchant.businessName" value="${merchant.businessName}" readonly="readonly" disabled/>
-
+			<input type="text" name="merchant.businessName" value="${merchant.businessName}" disabled readonly="readonly"/>
+		</div>
+		<div class="form-group">
 			<label for="merchant_phoneNumber">Phone Number:</label>
-			<input type="text" name="merchant.phoneNumber" id="merchant_phoneNumber" value="${merchant.phoneNumber}" readonly="readonly" disabled/>
-
+			<input type="text" name="merchant.phoneNumber" id="merchant_phoneNumber" value="${merchant.phoneNumber}" disabled readonly="readonly"/>
+		</div>
+		<div class="form-group">
 			<label for="merchant_email">Email:</label>
-			<input type="text" name="merchant.email" id="merchant_email" value="${merchant.email}" readonly="readonly" disabled/>
-
-			<label for="merchant_firstFoodOption">First Preference Option:</label>
-			<input type="text" name="merchant.firstFoodOption" id="merchant_firstFoodOption" value="${merchant.firstFoodOption}" readonly="readonly" disabled/>
-
-			<label for="merchant_secondFoodOption">Second Preference Option:</label>
-			<input type="text" name="merchant.secondFoodOption" id="merchant_secondFoodOption" value="${merchant.secondFoodOption}" readonly="readonly" disabled/>
-
-			<label for="merchant_thirdFoodOption">Third Preference Option:</label>
-			<input type="text" name="merchant.thirdFoodOption" id="merchant_thirdFoodOption" value="${merchant.thirdFoodOption}" readonly="readonly" disabled/>
-		
-	</fieldset>
-	<fieldset class="scheduler-border">
-		<legend class="scheduler-border">Location Information:</legend>
-
-			<label for="merchant_location_address">Street Address:</label>
-			<input type="text" name="location.address" id="merchant_location_address" value="${location.address}" readonly="readonly" disabled/>
-
-			<label for="merchant_location_city">City:</label>
-			<input type="text" name="location.city" id="merchant_location_city" value="${location.city}" readonly="readonly" disabled/>
-
-			<label for="merchant_location_state">State:</label>
-			<input type="text" name="location.state" id="merchant_location_state" value="${location.state}" readonly="readonly" disabled/>
-
-			<label for="merchant_location_zip">Zip Code:</label>
-			<input type="text" name="location.zip" id="merchant_location_zip" value="${location.zip}" readonly="readonly" disabled/>
-	</fieldset>
+			<input type="text" name="merchant.email" id="merchant_email" value="${merchant.email}" disabled readonly="readonly"/>
+		</div>
+		<div class="form-group">
+			<label for="merchant_firstFoodOption">Quick Order Option:</label>
+			<input type="text" name="merchant.firstFoodOption" id="merchant_firstFoodOption" value="${merchant.firstFoodOption}" disabled readonly="readonly"/>
+		</div>
+	
 	</form>
 </body>
 </html>

@@ -12,7 +12,6 @@
   <body>
 
     <div class="container">
-	<h2>Tweet and Eat! It's that simple. <b>;)</b></h2>
 	<div>
 		<p class='lead'>Welcome to EmojiPAY, the one and only service that lets you tweet your favorite orders and pay them automatically, ready for you to pick up or have delivered as fast as you can type!</p>
 		<a href='http://localhost:8080/EmoticonPayments/twitterAuth'>

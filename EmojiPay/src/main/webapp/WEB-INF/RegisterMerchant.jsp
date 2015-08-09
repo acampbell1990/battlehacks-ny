@@ -11,51 +11,31 @@
 
 <div class="container" style="margin-top: 7%;">
 
-	<form action="/EmoticonPayments/submitMerchantForm.html" method="post" id="editMerchant">
-	<h3 class="text-center">Merchant Information</h3>
+	<form action="/submitMerchantForm.html" method="post" id="editMerchant">
 		<div class="form-group">
-	      <label for="businessName">Business Name:</label>
-	      <input type="text" class="form-control" name="businessName" placeholder="Enter business name">
-	    </div>
-	    <div class="form-group">
-	     <label for="merchant_phoneNumber">Phone Number:</label>
-		 <input type="text" class="form-control" name="phoneNumber" id="merchant_phoneNumber" placeholder="Enter phone number"/>
-	    </div>
-	    <div class="form-group">
-	     	<label for="merchant_email">Email:</label>
-			<input type="text" name="email" id="merchant_email" class="form-control"placeholder="Enter email"/>
-	    </div>
-	     <div class="form-group">
-	     <label for="merchant_firstFoodOption">First Preference Option:</label>
-			<input type="text" name="firstFoodOption" id="merchant_firstFoodOption" class="form-control"placeholder="Enter food option"/>
-	    </div>
-	    <!--  <div class="form-group">
-	     <label for="merchant_secondFoodOption">Second Preference Option:</label>
-			<input type="text" name="secondFoodOption" id="merchant_secondFoodOption" class="form-control"placeholder="Enter food option"/>
-	    </div>
-	    <div class="form-group">
-	     <label for="merchant_thirdFoodOption">Third Preference Option:</label>
-			<input type="text" name="thirdFoodOption" id="merchant_thirdFoodOption" class="form-control"placeholder="Enter food option"/>
-	    </div>
+		<label for="twitterHandle">Twitter Handle:</label>
+		<input type="text" name="merchant.twitterHandle" value="${merchant.twitterHandle}"/>
+		</div>
 		<div class="form-group">
-	     <label for="merchant_location_address">Street Address:</label>
-		 <input type="text" name="location.address" id="merchant_location_address" class="form-control"placeholder="Enter address"/>
-	    </div>
-	    <div class="form-group">
-	     <label for="merchant_location_city">City:</label>
-			<input type="text" name="location.city" id="merchant_location_city" class="form-control"placeholder="Enter city"/>
-	    </div>
-	    <div class="form-group">
-	    <label for="merchant_location_state">State:</label>
-			<input type="text" name="location.state" id="merchant_location_state" class="form-control"placeholder="Enter state"/>
-	    </div>
-	    <div class="form-group">
-	     <label for="merchant_location_zip">Zip Code:</label>
-			<input type="text" name="location.zip" id="merchant_location_zip" class="form-control"placeholder="Enter zipcode"/>
-	    </div> -->
+			<label for="merchant_businessName">Business Name:</label>
+			<input type="text" name="merchant.businessName" value="${merchant.businessName}"/>
+		</div>
+		<div class="form-group">
+			<label for="merchant_phoneNumber">Phone Number:</label>
+			<input type="text" name="merchant.phoneNumber" id="merchant_phoneNumber" value="${merchant.phoneNumber}"/>
+		</div>
+		<div class="form-group">
+			<label for="merchant_email">Email:</label>
+			<input type="text" name="merchant.email" id="merchant_email" value="${merchant.email}"/>
+		</div>
+		<div class="form-group">
+			<label for="merchant_firstFoodOption">Quick Order Option:</label>
+			<input type="text" name="merchant.firstFoodOption" id="merchant_firstFoodOption" value="${merchant.firstFoodOption}"/>
+		</div>
+	
 	<button type="submit" class="btn btn-default">Submit</button>
 	</form>
-	<div/>
+</div>
 	 
 </body>
 </html>
