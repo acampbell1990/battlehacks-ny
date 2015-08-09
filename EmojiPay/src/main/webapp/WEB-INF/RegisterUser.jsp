@@ -7,39 +7,54 @@
 <jsp:include page="header.jsp"/>
 </head>
 <body>
-	<form action="" method="post" id="registerUser">
+	<form action="/submitUserForm.html" method="post" id="registerUser">
 	<fieldset class="fieldset-container-one">
 		<legend class="legend-header-one">Twitter Handle:</legend>
 		<label class="ui-hide" for="twitterHandle">Twitter Handle</label>
-		<input type="text" name="TwitterHandle"/>
+		<input type="text" name="client.twitterHandle"/>
+	</fieldset>
+	<fieldset class="fieldset-container-one">
+		<legend class="legend-header-one">Personal Information:</legend>
+		<fieldset class="fieldset-container-two">
+			<legend class="legend-header-two">First Name:</legend>
+			<input type="text" name="client.person.firstName"/>
+		</fieldset>
+		<fieldset class="fieldset-container-two">
+			<legend class="legend-header-two">Last Name:</legend>
+			<input type="text" name="client.person.lastName"/>
+		</fieldset>
+		<fieldset class="fieldset-container-two">
+			<legend class="legend-header-two">PayPal Information:</legend>
+			<input type="text" name="client.paypalInfo"/>
+		</fieldset>
+		<fieldset class="fieldset-container-two">
+			<legend class="legend-header-two">Preference:</legend>
+			<input type="text" name="client.preference"/>
+		</fieldset>
 	</fieldset>
 	<fieldset class="fieldset-container-one">
 		<legend class="legend-header-one">Location:</legend>
 		<fieldset class="fieldset-container-two">
-			<legend class="legend-header-two">Address Line 1:</legend>
-			<label class="ui-hide" for="Address_AddressLine1">Address Line 1</label>
-			<input type="text" name="Address.AddressLine1" id="Address_AddressLine1"/>
-		</fieldset>
-		<fieldset class="fieldset-container-two">
-			<legend class="legend-header-two">Address Line 2:</legend>
-			<label class="ui-hide" for="twitterHandle">Address Line 2</label>
+			<legend class="legend-header-two">Address:</legend>
+			<!-- <label class="ui-hide" for="Location_AddressLine1">Address</label>-->
+			<input type="text" name="client.location.address" id="Location_AddressLine1"/>
 		</fieldset>
 		<fieldset class="fieldset-container-two">
 			<legend class="legend-header-two">City:</legend>
-			<label class="ui-hide" for="twitterHandle">City</label>
+			<label class="ui-hide" for="Location_City">City</label>
+			<input type="text" name="client.location.city" id="Location_City" />
 		</fieldset>
 		<fieldset class="fieldset-container-one">
 			<legend class="legend-header-one">State:</legend>
-			<label class="ui-hide" for="twitterHandle">State</label>
+			<!--<label class="ui-hide" for="Location_State">State</label>-->
+			<input type="text" name="client.location.state" id="Location_State" />
 		</fieldset>
 		<fieldset class="fieldset-container-one">
 			<legend class="legend-header-one">Zip Code:</legend>
-			<label class="ui-hide" for="twitterHandle">Zip Code</label>
+			<input type="text" name="client.location.zip" />
 		</fieldset>
 	</fieldset>
-	<fieldset class="fieldset-container-one">
-		<legend class="legend-header-one">PayPal Information:</legend>
-	</fieldset>
 	</form>
+	<input type="button" onclick="$('#registerUser').submit()"> 
 </body>
 </html>
