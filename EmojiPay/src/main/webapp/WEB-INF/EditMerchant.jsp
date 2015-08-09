@@ -26,17 +26,17 @@
 			<label for="merchant_firstFoodOption">First Preference Option:</label>
 			<input type="text" name="merchant.firstFoodOption" id="merchant_firstFoodOption" value="${merchant.firstFoodOption}"/>
 
-			<label for="merchant_secondFoodOption">Second Preference Option:</label>
+			<%-- <label for="merchant_secondFoodOption">Second Preference Option:</label>
 			<input type="text" name="merchant.secondFoodOption" id="merchant_secondFoodOption" value="${merchant.secondFoodOption}"/>
 
 			<label for="merchant_thirdFoodOption">Third Preference Option:</label>
 			<input type="text" name="merchant.thirdFoodOption" id="merchant_thirdFoodOption" value="${merchant.thirdFoodOption}"/>
-		
+		 --%>
 
 			<%-- <label for="merchant_paypalInfo">PayPal Information:</label>
 			<input type="text" name="merchant.paypalInfo" id="merchant_paypalInfo" value="${merchant.paypalInfo}"/> --%>
 		</fieldset>
-	<fieldset class="scheduler-border">
+	<%-- <fieldset class="scheduler-border">
 		<legend class="scheduler-border">Location Information:</legend>
 
 			<label for="merchant_location_address">Street Address:</label>
@@ -50,7 +50,7 @@
 
 			<label for="merchant_location_zip">Zip Code:</label>
 			<input type="text" name="location.zip" id="merchant_location_zip" value="${location.zip}"/>
-		</fieldset>
+		</fieldset> --%>
 	</form>
 	<button type="button" onclick="$('#editMerchant').submit()">Submit</button> 
 </body>

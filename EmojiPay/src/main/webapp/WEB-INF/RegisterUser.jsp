@@ -8,7 +8,7 @@
 	<jsp:include page="navbar.jsp"/>
 </head>
 <body>
-
+ 
 	<div class="container" style="margin-top: 7%;">
   
   <form action="/EmoticonPayments/submitUserForm.html" method="post" id="registerUser">

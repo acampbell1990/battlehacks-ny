@@ -11,7 +11,7 @@
 	<form action="/submitUserForm.html" method="post" id="registerUser">
 		<label for="twitterHandle">Twitter Handle</label>
 		<input type="text" value="${client.twitterHandle}" id="twitterHandle"/>
-		<fieldset class="scheduler-border">
+		<%-- <fieldset class="scheduler-border">
 			<legend class="scheduler-border">Location Information</legend>
 			<label for="Location_AddressLine1">Street Address:</label>
 			<input type="text" value="${client.location.address}" id="Location_AddressLine1"/>
@@ -24,7 +24,7 @@
 
 			<label for="Location_Zip">Zip Code:</legend>
 			<input type="text" value="${client.location.zip}" id="Location_Zip"/>		
-		</fieldset>
+		</fieldset> --%>
 	</form>
 	<button type="button" onclick="$('#editUser').submit()"> 
 </body>

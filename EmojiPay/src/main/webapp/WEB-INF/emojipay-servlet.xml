@@ -11,7 +11,6 @@
 	<!-- <bean name="/WEB-INF/index.htm" class="com.battlehack.ny.controller.ClientController" 
 		/> -->
 	<context:component-scan base-package="com.battlehack.ny.emojipay.controller" />
-
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix">
@@ -38,4 +37,5 @@
 		<value>.jsp</value>
 	</property>
 </bean>
+
 </beans>
