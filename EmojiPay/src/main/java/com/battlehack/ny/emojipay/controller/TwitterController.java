@@ -45,7 +45,7 @@ public class TwitterController {
 		TwitterFactory factory = new TwitterFactory(configuration);
 		Twitter twitter = factory.getInstance();
 		RequestToken requestToken;
-		String authUrl = null;
+		String authUrl = null;	
 		try {
 			String callbackURL = "http://127.0.0.1:8080/EmoticonPayments/success";
 			requestToken = twitter.getOAuthRequestToken(callbackURL);

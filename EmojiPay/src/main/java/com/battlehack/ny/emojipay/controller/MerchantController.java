@@ -1,6 +1,7 @@
 package com.battlehack.ny.emojipay.controller;
 
 import org.apache.log4j.Logger;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -9,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.battlehack.ny.emojipay.model.Merchant;
-
+@Controller
 public class MerchantController {
 	Logger LOG = Logger.getLogger(MerchantController.class);
 
