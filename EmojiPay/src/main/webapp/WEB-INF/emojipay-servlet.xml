@@ -1,7 +1,6 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:context="http://www.springframework.org/schema/context"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
 	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
 	http://www.springframework.org/schema/context
@@ -13,7 +12,7 @@
 		/> -->
 	<context:component-scan base-package="com.battlehack.ny.emojipay.controller" />
 
-	<bean id="viewResolver"
+	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix">
 			<value>/WEB-INF/</value>
@@ -22,4 +21,20 @@
 			<value>.jsp</value>
 		</property>
 	</bean>
+	<bean id="oauthToken" class="com.battlehack.ny.emojipay.model.OAuthToken">
+		<property name="consumerKey" value="zfIKyZf2aladF7ooaBMlCmAwP" />
+		<property name="consumerSecret" value="uh7Kgd3DOeo8KKNWFVXYQbw4DGK9fXZ2poHGfMTMZjG9J6gPzG"/>
+	</bean>
+	
+	<bean id="accessToken" class="com.battlehack.ny.emojipay.model.MyAccessToken" />
+	
+	<bean id="viewResolver"
+	class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+	<property name="prefix">
+		<value>/WEB-INF/</value>
+	</property>
+	<property name="suffix">
+		<value>.jsp</value>
+	</property>
+</bean>
 </beans>

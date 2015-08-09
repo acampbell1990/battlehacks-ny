@@ -1,0 +1,5 @@
+@CHARSET "ISO-8859-1";
+fieldset.fieldset-container-one {margin: 12px 0 0 0; padding:5px 10px 15px 10px; border-top:1px solid #aaa; clear:both;}
+fieldset.fieldset-container-two {margin: 10px 0 0 0; padding:10px; border-top:1px solid #235070; clear:both;}
+legend.legend-header-two { display:block;  font-size: 14px; font-weight:bold; color:#555}
+legend.legend-header-three { display:block;  font-size: 13px; color:#444; font-weight:normal; margin-left:4px; border:1px solid #888; padding: 0 10px; background-color: #f7f7f7}

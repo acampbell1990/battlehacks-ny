@@ -38,22 +38,6 @@ public class ClientController {
 
 	@RequestMapping(value="/main") 
 	public String printWelcome(HttpServletResponse response,HttpServletRequest request) {
-
-		twitter.setOAuthConsumer(oauthToken.getConsumerKey(),oauthToken.getConsumerSecret());
-		RequestToken requestToken;
-		try {
-			String callbackURL = "http://127.0.0.1:8080/EmoticonPayments/success";
-			requestToken = twitter.getOAuthRequestToken(callbackURL);
-			String token = requestToken.getToken();
-			String tokenSecret = requestToken.getTokenSecret();
-			accestoken.setTokensecret(tokenSecret);
-			accestoken.setToken(token);
-			String authUrl = requestToken.getAuthorizationURL();
-			request.setAttribute("authUrl", authUrl);
-		} catch (TwitterException e) {
-			e.printStackTrace();
-		} 
-
 		return "/index";
 	}
 

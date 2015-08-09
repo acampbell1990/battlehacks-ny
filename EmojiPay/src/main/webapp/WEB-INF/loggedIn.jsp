@@ -10,7 +10,7 @@
 	<h2>Tweet and Eat! It's that simple. <b>:)</b></h2>
 	<div class="container">
 		<p>Welcome to EmojiPAY, the one and only service that lets you tweet your favorite orders and pay them automatically, ready for you to pick up or have delivered as fast as you can type!</p>
-		<a href='<%=request.getAttribute("authUrl") %>'>Sign in with Twitter</a>
+		<h1>Twitter Login successful for : ${message}</h1>
 	</div>
 </body>
 </html>
