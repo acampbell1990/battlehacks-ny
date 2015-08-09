@@ -13,13 +13,10 @@ public class DAOFactory {
 		return instance;
 	}
 
-	public UserDAO createUserDAO() {
+	public ClientDAOImpl createClientDAO() {
 		return new ClientDAOImpl();
 	}
 
-	public DataPointDAO createDataPointDAO() {
-		return new DataPointDAOImpl();
-	}
 
 	public void closeConnectionFactory() {
 		/*

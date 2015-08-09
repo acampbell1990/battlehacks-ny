@@ -14,10 +14,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import twitter4j.Twitter;
-import twitter4j.TwitterException;
 import twitter4j.TwitterFactory;
-import twitter4j.auth.RequestToken;
 
+import com.battlehack.ny.emojipay.dao.ClientDAOImpl;
 import com.battlehack.ny.emojipay.dao.DAOFactory;
 import com.battlehack.ny.emojipay.model.Client;
 import com.battlehack.ny.emojipay.model.MyAccessToken;
@@ -56,7 +55,8 @@ public class ClientController {
 	@RequestMapping(value="/submitUserForm.html", method = RequestMethod.POST)
 	public ModelAndView submitUserForm( @ModelAttribute("client") Client client, BindingResult result){
 		LOG.info("Submitted the User Information.");
-
+		daoFactory.beginConnectionFactory();
+		ClientDAOImpl cl = daoFactory.createClientDAO();
 		ModelAndView model;
 		if(result.hasErrors()){
 			LOG.info("The results for submitting User information have errors.");
@@ -65,7 +65,7 @@ public class ClientController {
 		}
 		model = new ModelAndView("UserProfile");
 		model.addObject("client", client);
-		int clientID = registerUser(client,  daoFactory.getInstance().getCon());
+		int clientID = cl.registerUser(client,  daoFactory.getInstance().getCon());
 		return model;
 	}
 

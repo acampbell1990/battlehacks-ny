@@ -21,6 +21,7 @@
 			<value>.jsp</value>
 		</property>
 	</bean>
+	<bean class="com.battlehack.ny.emojipay.dao.DAOFactory"/>
 	<bean id="oauthToken" class="com.battlehack.ny.emojipay.model.OAuthToken">
 		<property name="consumerKey" value="zfIKyZf2aladF7ooaBMlCmAwP" />
 		<property name="consumerSecret" value="uh7Kgd3DOeo8KKNWFVXYQbw4DGK9fXZ2poHGfMTMZjG9J6gPzG"/>
