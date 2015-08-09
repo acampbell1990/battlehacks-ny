@@ -37,9 +37,7 @@
 	     <label for="merchant_thirdFoodOption">Third Preference Option:</label>
 			<input type="text" name="merchant.thirdFoodOption" id="merchant_thirdFoodOption" class="form-control"placeholder="Enter food option"/>
 	    </div>
-	
-	
-	<div class="form-group">
+		<div class="form-group">
 	     <label for="merchant_location_address">Street Address:</label>
 		 <input type="text" name="location.address" id="merchant_location_address" class="form-control"placeholder="Enter address"/>
 	    </div>
@@ -57,7 +55,7 @@
 	    </div>
 	<button type="submit" class="btn btn-default">Submit</button>
 	</form>
-	<div class="container">
+	<div/>
 	 
 </body>
 </html>

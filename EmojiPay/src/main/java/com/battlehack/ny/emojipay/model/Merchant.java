@@ -12,7 +12,7 @@ public class Merchant {
 	private String twitterHandle;
 	private Location location;
 	
-	public Merchant(){};
+	// public Merchant(){};
 	
 	public Location getLocation() {
 		return location;
