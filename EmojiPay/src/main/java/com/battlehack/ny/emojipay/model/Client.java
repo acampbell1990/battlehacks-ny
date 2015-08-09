@@ -2,18 +2,17 @@ package com.battlehack.ny.emojipay.model;
 
 public class Client {
 
-	private Person person;
 	private String preference;
 	private String twitterHandle;
 	private String paypalInfo;
-	private Location location;
-
+	private String email;
 	
-	public Location getLocation() {
-		return location;
+	
+	public String getEmail() {
+		return email;
 	}
-	public void setLocation(Location location) {
-		this.location = location;
+	public void setEmail(String email) {
+		this.email = email;
 	}
 	public String getPreference() {
 		return preference;

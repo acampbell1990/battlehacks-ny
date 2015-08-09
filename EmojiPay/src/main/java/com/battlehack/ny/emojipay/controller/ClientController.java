@@ -1,7 +1,5 @@
 package com.battlehack.ny.emojipay.controller;
 
-import java.util.Map;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -15,21 +13,23 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.battlehack.ny.emojipay.model.Client;
-import com.battlehack.ny.emojipay.model.Merchant;
-import com.battlehack.ny.emojipay.model.MyAccessToken;
-import com.battlehack.ny.emojipay.model.OAuthToken;
-
 import twitter4j.Twitter;
 import twitter4j.TwitterException;
 import twitter4j.TwitterFactory;
-import twitter4j.auth.OAuth2Token;
 import twitter4j.auth.RequestToken;
+
+import com.battlehack.ny.emojipay.dao.DAOFactory;
+import com.battlehack.ny.emojipay.model.Client;
+import com.battlehack.ny.emojipay.model.MyAccessToken;
+import com.battlehack.ny.emojipay.model.OAuthToken;
 
 @Controller
 public class ClientController {
 	@Autowired
 	private OAuthToken oauthToken;	
+	@Autowired
+	DAOFactory daoFactory;
+	
 	Twitter twitter = new TwitterFactory().getInstance();
 
 	@Autowired
@@ -81,7 +81,7 @@ public class ClientController {
 		}
 		model = new ModelAndView("UserProfile");
 		model.addObject("client", client);
-
+		int clientID = registerUser(client,  daoFactory.getInstance().getCon());
 		return model;
 	}
 
