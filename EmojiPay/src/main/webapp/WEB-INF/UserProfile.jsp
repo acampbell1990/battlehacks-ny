@@ -15,25 +15,6 @@
 		<input type="text" value="${client.twitterHandle}" readonly="readonly"/>
 	</fieldset>
 	<fieldset class="scheduler-border">
-		<legend class="scheduler-border">Personal Information:</legend>
-		<fieldset class="scheduler-border">
-			<legend class="scheduler-border">First Name:</legend>
-			<input type="text" value="${client.person.firstName}" readonly="readonly"/>
-		</fieldset>
-		<fieldset class="scheduler-border">
-			<legend class="scheduler-border">Last Name:</legend>
-			<input type="text" value="${client.person.lastName}" readonly="readonly"/>
-		</fieldset>
-		<fieldset class="scheduler-border">
-			<legend class="scheduler-border">PayPal Information:</legend>
-			<input type="text" value="${client.paypalInfo}" readonly="readonly"/>
-		</fieldset>
-		<fieldset class="scheduler-border">
-			<legend class="scheduler-border">Preference:</legend>
-			<input type="text" value="${client.preference}" readonly="readonly"/>
-		</fieldset>
-	</fieldset>
-	<fieldset class="scheduler-border">
 		<legend class="scheduler-border">Location:</legend>
 		<fieldset class="scheduler-border">
 			<legend class="scheduler-border">Address:</legend>
