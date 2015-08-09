@@ -15,7 +15,7 @@ public class ClientDAOImpl {
 	
 
 	public int registerUser(Client client, Connection con) {
-		int locationID = new SharedDAOImpl().insertLocation(client.getLocation(), con);
+		//int locationID = new SharedDAOImpl().insertLocation(client.getLocation(), con);
 		
 		String query = "INSERT INTO client ( twitter_handle, email) VALUES('"+ client.getTwitterHandle() + "','"
 		+client.getEmail()+"')";
