@@ -32,24 +32,21 @@
 			<label for="merchant_thirdFoodOption">Third Preference Option:</label>
 			<input type="text" name="merchant.thirdFoodOption" id="merchant_thirdFoodOption" value="${merchant.thirdFoodOption}" readonly="readonly" disabled/>
 		
-
-			<label for="merchant_paypalInfo">PayPal Information:</label>
-			<input type="text" name="merchant.paypalInfo" id="merchant_paypalInfo" value="${merchant.paypalInfo}" readonly="readonly" disabled/>
 	</fieldset>
 	<fieldset class="scheduler-border">
 		<legend class="scheduler-border">Location Information:</legend>
 
 			<label for="merchant_location_address">Street Address:</label>
-			<input type="text" name="merchant.location.address" id="merchant_location_address" value="${merchant.location.address}" readonly="readonly" disabled/>
+			<input type="text" name="location.address" id="merchant_location_address" value="${location.address}" readonly="readonly" disabled/>
 
 			<label for="merchant_location_city">City:</label>
-			<input type="text" name="merchant.location.city" id="merchant_location_city" value="${merchant.location.city}" readonly="readonly" disabled/>
+			<input type="text" name="location.city" id="merchant_location_city" value="${location.city}" readonly="readonly" disabled/>
 
 			<label for="merchant_location_state">State:</label>
-			<input type="text" name="merchant.location.state" id="merchant_location_state" value="${merchant.location.state}" readonly="readonly" disabled/>
+			<input type="text" name="location.state" id="merchant_location_state" value="${location.state}" readonly="readonly" disabled/>
 
 			<label for="merchant_location_zip">Zip Code:</label>
-			<input type="text" name="merchant.location.zip" id="merchant_location_zip" value="${merchant.location.zip}" readonly="readonly" disabled/>
+			<input type="text" name="location.zip" id="merchant_location_zip" value="${location.zip}" readonly="readonly" disabled/>
 	</fieldset>
 	</form>
 </body>

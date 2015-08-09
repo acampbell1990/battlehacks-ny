@@ -3,7 +3,7 @@ package com.battlehack.ny.emojipay.model;
 public class Merchant {
 	
 	private String businessName;
-	private String paypalInformation;
+	//private String paypalInformation;
 	private String phoneNumber;
 	private String email;
 	private String firstFoodOption;
@@ -11,7 +11,8 @@ public class Merchant {
 	private String thirdFoodOption;
 	private String twitterHandle;
 	private Location location;
-
+	
+	public Merchant(){};
 	
 	public Location getLocation() {
 		return location;
@@ -61,10 +62,10 @@ public class Merchant {
 	public void setTwitterHandle(String twitterHandle){
 		this.twitterHandle = twitterHandle;
 	}
-	public String getPaypalInformation() {
-		return paypalInformation;
-	}
-	public void setPaypalInformation(String paypalInformation){
-		this.paypalInformation = paypalInformation;
-	}
+//	public String getPaypalInformation() {
+//		return paypalInformation;
+//	}
+//	public void setPaypalInformation(String paypalInformation){
+//		this.paypalInformation = paypalInformation;
+//	}
 }

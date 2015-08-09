@@ -8,50 +8,56 @@
 	<jsp:include page="navbar.jsp"/>
 </head>
 <body>
-	<form action="/submitMerchantForm.html" method="post" id="editMerchant">
-		<label for="twitterHandle">Twitter Handle:</label>
-		<input type="text" name="merchant.twitterHandle" value="${merchant.twitterHandle}"/>
 
-		<fieldset class="scheduler-border">
-		<legend class="scheduler-border">Merchant Information:</legend>
-			<label for="merchant_businessName">Business Name:</label>
-			<input type="text" name="merchant.businessName"/>
+<div class="container" style="margin-top: 7%;">
 
-			<label for="merchant_phoneNumber">Phone Number:</label>
-			<input type="text" name="merchant.phoneNumber" id="merchant_phoneNumber"/>
-
-			<label for="merchant_email">Email:</label>
-			<input type="text" name="merchant.email" id="merchant_email" />
-
-			<label for="merchant_firstFoodOption">First Preference Option:</label>
-			<input type="text" name="merchant.firstFoodOption" id="merchant_firstFoodOption"/>
-
-			<label for="merchant_secondFoodOption">Second Preference Option:</label>
-			<input type="text" name="merchant.secondFoodOption" id="merchant_secondFoodOption"/>
-
-			<label for="merchant_thirdFoodOption">Third Preference Option:</label>
-			<input type="text" name="merchant.thirdFoodOption" id="merchant_thirdFoodOption"/>
-		
-
-			<label for="merchant_paypalInfo">PayPal Information:</label>
-			<input type="text" name="merchant.paypalInfo" id="merchant_paypalInfo"/>
-		</fieldset>
-	<fieldset class="scheduler-border">
-		<legend class="scheduler-border">Location Information:</legend>
-
-			<label for="merchant_location_address">Street Address:</label>
-			<input type="text" name="merchant.location.address" id="merchant_location_address"/>
-
-			<label for="merchant_location_city">City:</label>
-			<input type="text" name="merchant.location.city" id="merchant_location_city"/>
-
-			<label for="merchant_location_state">State:</label>
-			<input type="text" name="merchant.location.state" id="merchant_location_state"/>
-
-			<label for="merchant_location_zip">Zip Code:</label>
-			<input type="text" name="merchant.location.zip" id="merchant_location_zip"/>
-		</fieldset>
+	<form action="/EmoticonPayments/submitMerchantForm.html" method="post" id="editMerchant">
+	<h3 class="text-center">Merchant Information</h3>
+		<div class="form-group">
+	      <label for="businessName">Business Name:</label>
+	      <input type="text" class="form-control" name="merchant.businessName" placeholder="Enter business name">
+	    </div>
+	    <div class="form-group">
+	     <label for="merchant_phoneNumber">Phone Number:</label>
+		 <input type="text" class="form-control" name="merchant.phoneNumber" id="merchant_phoneNumber" placeholder="Enter phone number"/>
+	    </div>
+	    <div class="form-group">
+	     	<label for="merchant_email">Email:</label>
+			<input type="text" name="merchant.email" id="merchant_email" class="form-control"placeholder="Enter email"/>
+	    </div>
+	     <div class="form-group">
+	     <label for="merchant_firstFoodOption">First Preference Option:</label>
+			<input type="text" name="merchant.firstFoodOption" id="merchant_firstFoodOption" class="form-control"placeholder="Enter food option"/>
+	    </div>
+	     <div class="form-group">
+	     <label for="merchant_secondFoodOption">Second Preference Option:</label>
+			<input type="text" name="merchant.secondFoodOption" id="merchant_secondFoodOption" class="form-control"placeholder="Enter food option"/>
+	    </div>
+	    <div class="form-group">
+	     <label for="merchant_thirdFoodOption">Third Preference Option:</label>
+			<input type="text" name="merchant.thirdFoodOption" id="merchant_thirdFoodOption" class="form-control"placeholder="Enter food option"/>
+	    </div>
+	
+	
+	<div class="form-group">
+	     <label for="merchant_location_address">Street Address:</label>
+		 <input type="text" name="location.address" id="merchant_location_address" class="form-control"placeholder="Enter address"/>
+	    </div>
+	    <div class="form-group">
+	     <label for="merchant_location_city">City:</label>
+			<input type="text" name="location.city" id="merchant_location_city" class="form-control"placeholder="Enter city"/>
+	    </div>
+	    <div class="form-group">
+	    <label for="merchant_location_state">State:</label>
+			<input type="text" name="location.state" id="merchant_location_state" class="form-control"placeholder="Enter state"/>
+	    </div>
+	    <div class="form-group">
+	     <label for="merchant_location_zip">Zip Code:</label>
+			<input type="text" name="location.zip" id="merchant_location_zip" class="form-control"placeholder="Enter zipcode"/>
+	    </div>
+	<button type="submit" class="btn btn-default">Submit</button>
 	</form>
-	<button type="button" onclick="$('#registerMerchant').submit()">Submit"</button> 
+	<div class="container">
+	 
 </body>
 </html>

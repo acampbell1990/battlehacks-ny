@@ -8,10 +8,11 @@
 	<jsp:include page="navbar.jsp"/>
 </head>
 <body>
-<br><br><br><br> 
-	<div class="container">
+
+	<div class="container" style="margin-top: 7%;">
   
   <form action="/EmoticonPayments/submitUserForm.html" method="post" id="registerUser">
+  <h3 class="text-center">User Information</h3>
     <div class="form-group">
       <label for="email">Email:</label>
       <input type="email" class="form-control" name="client.email" id="email" placeholder="Enter email">
