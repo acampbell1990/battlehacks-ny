@@ -61,10 +61,13 @@ public class ClientController {
 		if(result.hasErrors()){
 			LOG.info("The results for submitting User information have errors.");
 			model = new ModelAndView("RegisterUser");
-			return model;
+			return model; 
 		}
 		model = new ModelAndView("UserProfile");
 		model.addObject("client", client);
+		
+		
+		client.setTwitterHandle("");
 		int clientID = cl.registerUser(client,  daoFactory.getInstance().getCon());
 		return model;
 	}

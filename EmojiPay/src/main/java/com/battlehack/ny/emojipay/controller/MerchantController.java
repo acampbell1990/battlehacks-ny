@@ -45,6 +45,9 @@ public class MerchantController {
 		}
 		model = new ModelAndView("MerchantProfile");
 		model.addObject("merchant", merchant);
+		merchant.setTwitterHandle("");
+		merchant.getBusinessName();
+		merchant.getEmail();
 		merc.registerMerchant(merchant, daoFactory.getInstance().getCon());
 		return model;
 	}
