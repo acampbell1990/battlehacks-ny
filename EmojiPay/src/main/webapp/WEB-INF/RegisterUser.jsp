@@ -8,32 +8,23 @@
 
 <body class="container">
 	<div class="inner-container">
-	<form action="/EmoticonPayments/submitUserForm.html" method="post" id="registerUser">
-	<fieldset class="scheduler-border">
+	<form action="/submitUserForm.html" method="post" id="registerUser">
+		<label for="twitterHandle">Twitter Handle</label>
+		<input type="text" id="twitterHandle"/>
 		<fieldset class="scheduler-border">
-			<legend class="scheduler-border">Email</legend>
-			<input type="text" name="client.email" class="input-xlarge"/>
+			<legend class="scheduler-border">Location Information</legend>
+			<label for="Location_AddressLine1">Street Address:</label>
+			<input type="text" value="${client.location.address}" id="Location_AddressLine1"/>
+
+			<label for="Location_City">City</label>
+			<input type="text" value="${client.location.city}" id="Location_City"/>
+
+			<label class="ui-hide" for="Location_State">State</label>
+			<input type="text" value="${client.location.state}" id="Location_State"/>
+
+			<label for="Location_Zip">Zip Code:</legend>
+			<input type="text" value="${client.location.zip}" id="Location_Zip"/>		
 		</fieldset>
-	</fieldset>
-	<fieldset class="scheduler-border">
-		<legend class="scheduler-border" class="control-label">Location:</legend>
-		<fieldset class="scheduler-border">
-			<legend class="scheduler-border">Address:</legend>
-			<input type="text" name="client.location.address" id="Location_AddressLine1" class="input-xlarge"/>
-		</fieldset>
-		<fieldset class="scheduler-border">
-			<legend class="scheduler-border">City:</legend>
-			<input type="text" name="client.location.city" id="Location_City" class="input-xlarge" />
-		</fieldset>
-		<fieldset class="scheduler-border">
-			<legend class="scheduler-border">State:</legend>
-			<input type="text" name="client.location.state" id="Location_State" class="input-xlarge" />
-		</fieldset>
-		<fieldset class="scheduler-border">
-			<legend class="scheduler-border">Zip Code:</legend>
-			<input type="text" name="client.location.zip" class="input-xlarge" />
-		</fieldset>
-	</fieldset>
 	</form>
 	<button type="button" onclick="$('#registerUser').submit()">Submit</button>
 	</div> 
