@@ -16,6 +16,10 @@ public class DAOFactory {
 	public ClientDAOImpl createClientDAO() {
 		return new ClientDAOImpl();
 	}
+	
+	public MerchantDAOImpl createMerchantDAO() {
+		return new MerchantDAOImpl();
+	}
 
 
 	public void closeConnectionFactory() {

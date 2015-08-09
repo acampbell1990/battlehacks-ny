@@ -11,7 +11,7 @@
 	<form action="/submitMerchantForm.html" method="post" id="editMerchant">
 	<fieldset class="scheduler-border">
 		<legend class="scheduler-border">Twitter Handle:</legend>
-		<label class="ui-hide" for="twitterHandle">Twitter Handle</label>
+		<label for="twitterHandle">Twitter Handle:</label>
 		<input type="text" name="merchant.twitterHandle" value="${merchant.twitterHandle}"/>
 	</fieldset>
 	<fieldset class="scheduler-border">
@@ -41,7 +41,8 @@
 			<input type="text" name="merchant.thirdFoodOption" value="${merchant.thirdFoodOption}"/>
 		</fieldset>
 		<fieldset class="scheduler-border">
-			<legend class="scheduler-border">PayPal Information:</legend>
+			<legend class="scheduler-border"></legend>
+			<label>PayPal Information:</label>
 			<input type="text" name="merchant.paypalInfo" value="${merchant.paypalInfo}"/>
 		</fieldset>
 	</fieldset>
