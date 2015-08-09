@@ -8,50 +8,23 @@
 <jsp:include page="navbar.jsp"/>
 </head>
 <body>
-	<form action="/submitUserForm.html" method="post" id="editUser">
-	<fieldset class="scheduler-border">
-		<legend class="scheduler-border">Twitter Handle:</legend>
-		<label class="ui-hide" for="twitterHandle">Twitter Handle</label>
-		<input type="text" name="client.twitterHandle" value="${client.twitterHandle}"/>
-	</fieldset>
-	<fieldset class="scheduler-border">
-		<legend class="scheduler-border">Personal Information:</legend>
+	<form action="/submitUserForm.html" method="post" id="registerUser">
+		<label for="twitterHandle">Twitter Handle</label>
+		<input type="text" value="${client.twitterHandle}" id="twitterHandle"/>
 		<fieldset class="scheduler-border">
-			<legend class="scheduler-border">First Name:</legend>
-			<input type="text" name="client.person.firstName" value="${client.person.firstName}"/>
+			<legend class="scheduler-border">Location Information</legend>
+			<label for="Location_AddressLine1">Street Address:</label>
+			<input type="text" value="${client.location.address}" id="Location_AddressLine1"/>
+
+			<label for="Location_City">City</label>
+			<input type="text" value="${client.location.city}" id="Location_City"/>
+
+			<label class="ui-hide" for="Location_State">State</label>
+			<input type="text" value="${client.location.state}" id="Location_State"/>
+
+			<label for="Location_Zip">Zip Code:</legend>
+			<input type="text" value="${client.location.zip}" id="Location_Zip"/>		
 		</fieldset>
-		<fieldset class="scheduler-border">
-			<legend class="scheduler-border">Last Name:</legend>
-			<input type="text" name="client.person.lastName" value="${client.person.lastName}"/>
-		</fieldset>
-		<fieldset class="scheduler-border">
-			<legend class="scheduler-border">PayPal Information:</legend>
-			<input type="text" name="client.paypalInfo" value="${client.paypalInfo}"/>
-		</fieldset>
-		<fieldset class="scheduler-border">
-			<legend class="scheduler-border">Preference:</legend>
-			<input type="text" name="client.preference" value="${client.preference}"/>
-		</fieldset>
-	</fieldset>
-	<fieldset class="scheduler-border">
-		<legend class="scheduler-border">Location:</legend>
-		<fieldset class="scheduler-border">
-			<legend class="scheduler-border">Address:</legend>
-			<input type="text" name="client.location.address" id="Location_AddressLine1" value="${client.location.address}"/>
-		</fieldset>
-		<fieldset class="scheduler-border">
-			<legend class="scheduler-border">City:</legend>
-			<input type="text" name="client.location.city" id="Location_City" value="${client.location.city}"/>
-		</fieldset>
-		<fieldset class="scheduler-border">
-			<legend class="scheduler-border">State:</legend>
-			<input type="text" name="client.location.state" id="Location_State" value="${client.location.state}"/>
-		</fieldset>
-		<fieldset class="scheduler-border">
-			<legend class="scheduler-border">Zip Code:</legend>
-			<input type="text" name="client.location.zip" value="${client.location.zip}"/>
-		</fieldset>
-	</fieldset>
 	</form>
 	<button type="button" onclick="$('#editUser').submit()"> 
 </body>

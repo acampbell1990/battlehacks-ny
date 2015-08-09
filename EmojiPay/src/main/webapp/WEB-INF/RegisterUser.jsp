@@ -8,51 +8,36 @@
 	<jsp:include page="navbar.jsp"/>
 </head>
 <body>
-	<form action="/submitUserForm.html" method="post" id="registerUser">
-	<fieldset class="scheduler-border">
-		<legend class="scheduler-border">Twitter Handle:</legend>
-		<label class="ui-hide" for="twitterHandle">Twitter Handle</label>
-		<input type="text" name="client.twitterHandle"/>
-	</fieldset>
-	<fieldset class="scheduler-border">
-		<legend class="scheduler-border">Personal Information:</legend>
-		<fieldset class="scheduler-border">
-			<legend class="scheduler-border">First Name:</legend>
-			<input type="text" name="client.person.firstName"/>
-		</fieldset>
-		<fieldset class="scheduler-border">
-			<legend class="scheduler-border">Last Name:</legend>
-			<input type="text" name="client.person.lastName"/>
-		</fieldset>
-		<fieldset class="scheduler-border">
-			<legend class="scheduler-border">PayPal Information:</legend>
-			<input type="text" name="client.paypalInfo"/>
-		</fieldset>
-		<fieldset class="scheduler-border">
-			<legend class="scheduler-border">Preference:</legend>
-			<input type="text" name="client.preference"/>
-		</fieldset>
-	</fieldset>
-	<fieldset class="scheduler-border">
-		<legend class="scheduler-border">Location:</legend>
-		<fieldset class="scheduler-border">
-			<legend class="scheduler-border">Address:</legend>
-			<input type="text" name="client.location.address" id="Location_AddressLine1"/>
-		</fieldset>
-		<fieldset class="scheduler-border">
-			<legend class="scheduler-border">City:</legend>
-			<input type="text" name="client.location.city" id="Location_City" />
-		</fieldset>
-		<fieldset class="scheduler-border">
-			<legend class="scheduler-border">State:</legend>
-			<input type="text" name="client.location.state" id="Location_State" />
-		</fieldset>
-		<fieldset class="scheduler-border">
-			<legend class="scheduler-border">Zip Code:</legend>
-			<input type="text" name="client.location.zip" />
-		</fieldset>
-	</fieldset>
-	</form>
-	<button type="button" onclick="$('#registerUser').submit()">Submit</button> 
+
+	<div class="container" style="margin-top: 7%;">
+  
+  <form action="/EmoticonPayments/submitUserForm.html" method="post" id="registerUser">
+  <h3 class="text-center">User Information</h3>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" name="client.email" id="email" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+      <label for="address">Address:</label>
+      <input type="text" class="form-control"name="location.address" id="Location_AddressLine1" placeholder="Enter address">
+    </div>
+    <div class="form-group">
+      <label for="city">City:</label>
+      <input type="text" class="form-control" name="location.city" id="Location_City" placeholder="Enter city">
+    </div>
+    <div class="form-group">
+      <label for="state">State:</label>
+      <input type="text" class="form-control" name="location.state" id="Location_State" placeholder="Enter state">
+    </div>
+    <div class="form-group">
+      <label for="zip">Zip-Code:</label>
+      <input type="text" class="form-control" name="location.zip" placeholder="Enter zip">
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox"> Remember me</label>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
 </body>
 </html>

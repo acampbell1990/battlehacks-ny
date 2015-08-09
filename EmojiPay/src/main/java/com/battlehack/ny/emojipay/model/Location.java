@@ -7,12 +7,7 @@ public class Location {
 	private String state;
 	private int zip;
 	
-	public Location(String address, String city, String state, int zip){
-		this.address = address;
-		this.city = city;
-		this.state = state;
-		this.zip = zip;
-	}
+	public Location(){}
 	
 	public String getAddress() {
 		return address;
