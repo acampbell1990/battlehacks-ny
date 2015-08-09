@@ -52,10 +52,10 @@ public class ClientController {
 		return model;
 	}
 	
-	@RequestMapping(value="/EditProfile.html", method = RequestMethod.GET)
+	@RequestMapping(value="/EditUser.html", method = RequestMethod.GET)
 	public ModelAndView getEditUser( @ModelAttribute("client") Client client, BindingResult result){
 		LOG.info("Accessed Edit client profile page.");
-		ModelAndView model = new ModelAndView("EditProfile");
+		ModelAndView model = new ModelAndView("EditUser");
 		return model;
 	}
 }
