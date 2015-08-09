@@ -39,8 +39,10 @@ public class ClientController {
 	@RequestMapping(value="/main") 
 	public String printWelcome(HttpServletResponse response,HttpServletRequest request) {
 
-		twitter.setOAuthConsumer(oauthToken.getConsumerKey(),oauthToken.getConsumerSecret());
+		//twitter.setOAuthConsumer(oauthToken.getConsumerKey(),oauthToken.getConsumerSecret());
+		//twitter.setOAuthConsumer("zfIKyZf2aladF7ooaBMlCmAwP","uh7Kgd3DOeo8KKNWFVXYQbw4DGK9fXZ2poHGfMTMZjG9J6gPzG");
 		RequestToken requestToken;
+		String authUrl = null;
 		try {
 			String callbackURL = "http://127.0.0.1:8080/EmoticonPayments/success";
 			requestToken = twitter.getOAuthRequestToken(callbackURL);
@@ -48,13 +50,12 @@ public class ClientController {
 			String tokenSecret = requestToken.getTokenSecret();
 			accestoken.setTokensecret(tokenSecret);
 			accestoken.setToken(token);
-			String authUrl = requestToken.getAuthorizationURL();
+			authUrl = requestToken.getAuthorizationURL();
 			request.setAttribute("authUrl", authUrl);
 		} catch (TwitterException e) {
 			e.printStackTrace();
-		} 
-
-		return "/index";
+		}
+		return authUrl;
 	}
 
 	@RequestMapping(value="/RegisterUser.html", method = RequestMethod.GET)
@@ -85,10 +86,11 @@ public class ClientController {
 		return model;
 	}
 
-	@RequestMapping(value="/EditProfile.html", method = RequestMethod.GET)
+	
+	@RequestMapping(value="/EditUser.html", method = RequestMethod.GET)
 	public ModelAndView getEditUser( @ModelAttribute("client") Client client, BindingResult result){
 		LOG.info("Accessed Edit client profile page.");
-		ModelAndView model = new ModelAndView("EditProfile");
+		ModelAndView model = new ModelAndView("EditUser");
 		return model;
 	}
 }
