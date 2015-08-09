@@ -9,7 +9,7 @@ public class Merchant {
 	private String firstFoodOption;
 	private String secondFoodOption;
 	private String thirdFoodOption;
-	private String twitter_handle;
+	private String twitterHandle;
 	private Location location;
 
 	
@@ -56,10 +56,10 @@ public class Merchant {
 		this.thirdFoodOption = thirdFoodOption;
 	}
 	public String getTwitterHandle() {
-		return twitter_handle;
+		return twitterHandle;
 	}
 	public void setTwitterHandle(String twitterHandle){
-		this.twitter_handle = twitterHandle;
+		this.twitterHandle = twitterHandle;
 	}
 	public String getPaypalInformation() {
 		return paypalInformation;

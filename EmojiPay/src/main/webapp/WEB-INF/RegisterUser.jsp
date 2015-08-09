@@ -8,29 +8,11 @@
 	<jsp:include page="navbar.jsp"/>
 </head>
 <body>
-	<form action="/submitUserForm.html" method="post" id="registerUser">
+	<form action="/EmoticonPayments/submitUserForm.html" method="post" id="registerUser">
 	<fieldset class="scheduler-border">
-		<legend class="scheduler-border">Twitter Handle:</legend>
-		<label class="ui-hide" for="twitterHandle">Twitter Handle</label>
-		<input type="text" name="client.twitterHandle"/>
-	</fieldset>
-	<fieldset class="scheduler-border">
-		<legend class="scheduler-border">Personal Information:</legend>
 		<fieldset class="scheduler-border">
-			<legend class="scheduler-border">First Name:</legend>
-			<input type="text" name="client.person.firstName"/>
-		</fieldset>
-		<fieldset class="scheduler-border">
-			<legend class="scheduler-border">Last Name:</legend>
-			<input type="text" name="client.person.lastName"/>
-		</fieldset>
-		<fieldset class="scheduler-border">
-			<legend class="scheduler-border">PayPal Information:</legend>
-			<input type="text" name="client.paypalInfo"/>
-		</fieldset>
-		<fieldset class="scheduler-border">
-			<legend class="scheduler-border">Preference:</legend>
-			<input type="text" name="client.preference"/>
+			<legend class="scheduler-border">Email</legend>
+			<input type="text" name="client.email"/>
 		</fieldset>
 	</fieldset>
 	<fieldset class="scheduler-border">

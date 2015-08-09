@@ -15,7 +15,7 @@ public class MerchantDAOImpl {
 	public int registerMerchant(Merchant merchant, Connection con) {
 		int locationID = new SharedDAOImpl().insertLocation(merchant.getLocation(), con);
 		
-		String query = "INSERT INTO client ( twitter_handle, name, locationID, item1, item2, item3, email, phone ) "
+		String query = "INSERT INTO merchant ( twitter_handle, name, locationID, item1, item2, item3, email, phone ) "
 				+ "VALUES('"+ merchant.getTwitterHandle() +"','"+merchant.getBusinessName()+"','"+locationID+"','"+merchant.getFirstFoodOption()
 				+"','"+merchant.getSecondFoodOption()+"','"+ merchant.getEmail()+ "','"+merchant.getPhoneNumber()+"')";
 		
