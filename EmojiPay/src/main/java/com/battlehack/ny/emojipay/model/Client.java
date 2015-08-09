@@ -7,6 +7,8 @@ public class Client {
 	private String email;
 	private Location location;
 	
+	public Client(){}
+	
 	public Location getLocation() {
 		return location;
 	}

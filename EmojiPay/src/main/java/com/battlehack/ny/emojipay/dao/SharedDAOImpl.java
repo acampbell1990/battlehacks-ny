@@ -14,7 +14,7 @@ public class SharedDAOImpl {
 			
 		String query = "INSERT INTO locations ( address, city, state, zip ) "
 				+ "VALUES('"+ location.getAddress() +"','"+location.getCity()+"','"+location.getState()+"','"+location.getZip()
-				+"'')";
+				+"')";
 		String result = "";
 		ResultSet rs = null;
 		int id = 0;

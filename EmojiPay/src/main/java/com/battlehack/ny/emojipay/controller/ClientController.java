@@ -65,6 +65,8 @@ public class ClientController {
 		}
 		model = new ModelAndView("UserProfile");
 		model.addObject("client", client);
+		
+		
 		client.setTwitterHandle("");
 		int clientID = cl.registerUser(client,  daoFactory.getInstance().getCon());
 		return model;

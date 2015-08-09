@@ -8,33 +8,35 @@
 	<jsp:include page="navbar.jsp"/>
 </head>
 <body>
-	<form action="/EmoticonPayments/submitUserForm.html" method="post" id="registerUser">
-	<fieldset class="scheduler-border">
-		<fieldset class="scheduler-border">
-			<legend class="scheduler-border">Email</legend>
-			<input type="text" name="client.email"/>
-		</fieldset>
-	</fieldset>
-	<fieldset class="scheduler-border">
-		<legend class="scheduler-border">Location:</legend>
-		<fieldset class="scheduler-border">
-			<legend class="scheduler-border">Address:</legend>
-			<input type="text" name="client.location.address" id="Location_AddressLine1"/>
-		</fieldset>
-		<fieldset class="scheduler-border">
-			<legend class="scheduler-border">City:</legend>
-			<input type="text" name="client.location.city" id="Location_City" />
-		</fieldset>
-		<fieldset class="scheduler-border">
-			<legend class="scheduler-border">State:</legend>
-			<input type="text" name="client.location.state" id="Location_State" />
-		</fieldset>
-		<fieldset class="scheduler-border">
-			<legend class="scheduler-border">Zip Code:</legend>
-			<input type="text" name="client.location.zip" />
-		</fieldset>
-	</fieldset>
-	</form>
-	<button type="button" onclick="$('#registerUser').submit()">Submit</button> 
+<br><br><br><br>
+	<div class="container">
+  
+  <form action="/EmoticonPayments/submitUserForm.html" method="post" id="registerUser">
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" name="client.email" id="email" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+      <label for="address">Address:</label>
+      <input type="text" class="form-control"name="location.address" id="Location_AddressLine1" placeholder="Enter address">
+    </div>
+    <div class="form-group">
+      <label for="city">City:</label>
+      <input type="text" class="form-control" name="location.city" id="Location_City" placeholder="Enter city">
+    </div>
+    <div class="form-group">
+      <label for="state">State:</label>
+      <input type="text" class="form-control" name="location.state" id="Location_State" placeholder="Enter state">
+    </div>
+    <div class="form-group">
+      <label for="zip">Zip-Code:</label>
+      <input type="text" class="form-control" name="location.zip" placeholder="Enter zip">
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox"> Remember me</label>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
 </body>
 </html>

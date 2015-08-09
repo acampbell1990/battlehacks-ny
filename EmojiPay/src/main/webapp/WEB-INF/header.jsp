@@ -8,10 +8,10 @@
     <title>Emoji PAY ;)</title>
 
 	
-	<div class="topNav" id="homeButton" style="background-color: #38C; position: relative;">
+	<!-- <div class="topNav" id="homeButton" style="background-color: #38C; position: relative;">
 		<img src="http://media.giphy.com/media/10A2K0IjYAetTG/giphy.gif" style:"height: 20px; width: 20px; display: inline;"/>
 		<h1 style="display: inline; font-size: 450%; postion: absolute; bottom: 0;"><b>EmojiPAY ;)</b></h1>
-	</div>
+	</div> -->
 
 	<!--Import JQUERY-->
 	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
