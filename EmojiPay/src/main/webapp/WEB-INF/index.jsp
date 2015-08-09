@@ -16,7 +16,7 @@
 	<div>
 		<p class='lead'>Welcome to EmojiPAY, the one and only service that lets you tweet your favorite orders and pay them automatically, ready for you to pick up or have delivered as fast as you can type!</p>
 		<a href='http://localhost:8080/EmoticonPayments/twitterAuth'>
-			<img src="<c:url value="images/sign-in-with-twitter-gray.png"/>" alt="Sign in with Twitter">
+			<img src="https://g.twimg.com/dev/sites/default/files/images_documentation/sign-in-with-twitter-gray.png" alt="Sign in with Twitter">
 		</a>
 	</div>
 	<br>
