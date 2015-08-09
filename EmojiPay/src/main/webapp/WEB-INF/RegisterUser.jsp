@@ -5,6 +5,7 @@
 <html lang="en">
 <head>
 <jsp:include page="header.jsp"/>
+<jsp:include page="navbar.jsp"/>
 </head>
 <body>
 	<form action="/submitUserForm.html" method="post" id="registerUser">
@@ -52,6 +53,6 @@
 		</fieldset>
 	</fieldset>
 	</form>
-	<input type="button" onclick="$('#registerUser').submit()"> 
+	<button type="button" onclick="$('#registerUser').submit()">Submit</button> 
 </body>
 </html>

@@ -5,6 +5,7 @@
 <html lang="en">
 <head>
 <jsp:include page="header.jsp"/>
+<jsp:include page="navbar.jsp"/>
 </head>
 <body>
 	<form action="/submitMerchantForm.html" method="post" id="editMerchant">
@@ -64,6 +65,6 @@
 		</fieldset>
 	</fieldset>
 	</form>
-	<input type="button" onclick="$('#editMerchant').submit()"> 
+	<button type="button" onclick="$('#editMerchant').submit()">Submit</button> 
 </body>
 </html>

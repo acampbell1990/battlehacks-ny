@@ -64,6 +64,6 @@
 		</fieldset>
 	</fieldset>
 	</form>
-	<input type="button" onclick="$('#registerMerchant').submit()"> 
+	<button type="button" onclick="$('#registerMerchant').submit()">Submit"</button> 
 </body>
 </html>

@@ -33,7 +33,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
     
-    <div class="topNav" id="homeButton"><h1>EmojiPAY :)</h1></div>
+    <div class="topNav" id="homeButton" style="background-color: #38E"><h1>EmojiPAY :)</h1></div>
     
   </head>
   <body>
