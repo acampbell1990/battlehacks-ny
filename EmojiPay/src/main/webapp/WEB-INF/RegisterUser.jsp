@@ -17,7 +17,7 @@
       <label for="email">Email:</label>
       <input type="email" class="form-control" name="client.email" id="email" placeholder="Enter email">
     </div>
-    <div class="form-group">
+    <!-- <div class="form-group">
       <label for="address">Address:</label>
       <input type="text" class="form-control"name="location.address" id="Location_AddressLine1" placeholder="Enter address">
     </div>
@@ -35,7 +35,7 @@
     </div>
     <div class="checkbox">
       <label><input type="checkbox"> Remember me</label>
-    </div>
+    </div> -->
     <button type="submit" class="btn btn-default">Submit</button>
   </form>
 </div>

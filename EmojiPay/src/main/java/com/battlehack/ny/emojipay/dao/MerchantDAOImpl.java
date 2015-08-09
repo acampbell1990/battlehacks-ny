@@ -12,25 +12,25 @@ public class MerchantDAOImpl {
 	ResultSet rs = null;
 	
 
-	public int registerMerchant(Merchant merchant, Connection con) {
-		int locationID = new SharedDAOImpl().insertLocation(merchant.getLocation(), con);
-		int id = 0;
-		String query = "INSERT INTO merchant ( twitter_handle, name, locationID, item1, item2, item3, email, phone ) "
-				+ "VALUES('"+ merchant.getTwitterHandle() +"','"+merchant.getBusinessName()+"','"+locationID+"','"+merchant.getFirstFoodOption()
-				+"','"+merchant.getSecondFoodOption()+"','"+merchant.getThirdFoodOption()+"','"+ merchant.getEmail()+ "','"+merchant.getPhoneNumber()+"')";
+	public String registerMerchant(Merchant merchant, Connection con) {
+		//int locationID = new SharedDAOImpl().insertLocation(merchant.getLocation(), con);
+		//int id = 0;
+		String query = "INSERT INTO merchant ( twitter_handle, name, item1, email, phone ) "
+				+ "VALUES('"+ merchant.getTwitterHandle() +"','"+merchant.getBusinessName()+"','"+merchant.getFirstFoodOption()+
+				"','"+ merchant.getEmail()+ "','"+merchant.getPhoneNumber()+"')";
 		
 		String result = "";
 		try {
 			stmt = con.prepareStatement(query);
 			stmt.executeUpdate();
-			id = rs.getInt("clientID");
+			//id = rs.getInt("clientID");
 			result = "success";
 		} catch (Exception e) {
 			System.out.println(e);
 			result = "failure";
 		}
 		
-		return id;
+		return result;
 	}
 
 

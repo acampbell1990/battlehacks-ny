@@ -10,16 +10,16 @@ public class Merchant {
 	private String secondFoodOption;
 	private String thirdFoodOption;
 	private String twitterHandle;
-	private Location location;
+	//private Location location;
 	
 	// public Merchant(){};
 	
-	public Location getLocation() {
-		return location;
-	}
-	public void setLocation(Location location) {
-		this.location = location;
-	}
+//	public Location getLocation() {
+//		return location;
+//	}
+//	public void setLocation(Location location) {
+//		this.location = location;
+//	}
 	public String getPhoneNumber() {
 		return phoneNumber;
 	}

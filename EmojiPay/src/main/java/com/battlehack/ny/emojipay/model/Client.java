@@ -5,16 +5,16 @@ public class Client {
 	private String twitterHandle;
 	//private String paypalInfo;
 	private String email;
-	private Location location;
+	//private Location location;
 	
 	public Client(){}
 	
-	public Location getLocation() {
-		return location;
-	}
-	public void setLocation(Location location) {
-		this.location = location;
-	}
+//	public Location getLocation() {
+//		return location;
+//	}
+//	public void setLocation(Location location) {
+//		this.location = location;
+//	}
 	public String getEmail() {
 		return email;
 	}

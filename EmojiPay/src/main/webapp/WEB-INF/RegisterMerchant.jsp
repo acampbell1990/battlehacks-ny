@@ -15,27 +15,27 @@
 	<h3 class="text-center">Merchant Information</h3>
 		<div class="form-group">
 	      <label for="businessName">Business Name:</label>
-	      <input type="text" class="form-control" name="merchant.businessName" placeholder="Enter business name">
+	      <input type="text" class="form-control" name="businessName" placeholder="Enter business name">
 	    </div>
 	    <div class="form-group">
 	     <label for="merchant_phoneNumber">Phone Number:</label>
-		 <input type="text" class="form-control" name="merchant.phoneNumber" id="merchant_phoneNumber" placeholder="Enter phone number"/>
+		 <input type="text" class="form-control" name="phoneNumber" id="merchant_phoneNumber" placeholder="Enter phone number"/>
 	    </div>
 	    <div class="form-group">
 	     	<label for="merchant_email">Email:</label>
-			<input type="text" name="merchant.email" id="merchant_email" class="form-control"placeholder="Enter email"/>
+			<input type="text" name="email" id="merchant_email" class="form-control"placeholder="Enter email"/>
 	    </div>
 	     <div class="form-group">
 	     <label for="merchant_firstFoodOption">First Preference Option:</label>
-			<input type="text" name="merchant.firstFoodOption" id="merchant_firstFoodOption" class="form-control"placeholder="Enter food option"/>
+			<input type="text" name="firstFoodOption" id="merchant_firstFoodOption" class="form-control"placeholder="Enter food option"/>
 	    </div>
-	     <div class="form-group">
+	    <!--  <div class="form-group">
 	     <label for="merchant_secondFoodOption">Second Preference Option:</label>
-			<input type="text" name="merchant.secondFoodOption" id="merchant_secondFoodOption" class="form-control"placeholder="Enter food option"/>
+			<input type="text" name="secondFoodOption" id="merchant_secondFoodOption" class="form-control"placeholder="Enter food option"/>
 	    </div>
 	    <div class="form-group">
 	     <label for="merchant_thirdFoodOption">Third Preference Option:</label>
-			<input type="text" name="merchant.thirdFoodOption" id="merchant_thirdFoodOption" class="form-control"placeholder="Enter food option"/>
+			<input type="text" name="thirdFoodOption" id="merchant_thirdFoodOption" class="form-control"placeholder="Enter food option"/>
 	    </div>
 		<div class="form-group">
 	     <label for="merchant_location_address">Street Address:</label>
@@ -52,7 +52,7 @@
 	    <div class="form-group">
 	     <label for="merchant_location_zip">Zip Code:</label>
 			<input type="text" name="location.zip" id="merchant_location_zip" class="form-control"placeholder="Enter zipcode"/>
-	    </div>
+	    </div> -->
 	<button type="submit" class="btn btn-default">Submit</button>
 	</form>
 	<div/>
