@@ -38,6 +38,6 @@
     
     <!--<link rel="stylesheet" href="${pageContext.request.contextPath}/WEB-INF/CustomStyle.css">-->
   </head>
-  <body>
+  <body background="bkgrnd.jpeg">
 
   
